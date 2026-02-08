@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(31, 31, 42);
+    color: aliceblue;
+    text-align: center;
+    font-family: monospace;
+}
+
+p {
+    font-size: 15px;
+}
+
+button {
+    width: 225px;
+    height: 45px;
+    color: aliceblue;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 15px;
+    transition: filter 0.2s ease;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+button:active {
+    filter: brightness(1.5);
+}
+
+.twitch {
+    background-color: rgb(130, 54, 245)
+}
+
+.instagram {
+    background-color: rgb(226, 66, 119);
+}
+
+.youtube {
+    background-color: rgb(255, 61, 61);
+}
+
+.discord {
+    background-color: rgb(102, 116, 226);
+}
+
+.spotify {
+    background-color: rgb(55, 163, 93);
+}
+
+.geoguessr {
+    background-color: #be5554;
+}
