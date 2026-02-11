@@ -3,22 +3,29 @@ body {
     color: aliceblue;
     text-align: center;
     font-family: monospace;
+    padding: 20px;
 }
 
 p {
-    font-size: 15px;
+    font-size: clamp(14px, 5vw, 15px);
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: clamp(24px, 8vw, 32px);
 }
 
 button {
-    width: 225px;
+    width: min(225px, 90%);
     height: 45px;
     color: aliceblue;
     border-radius: 12px;
     border: none;
     cursor: pointer;
     font-family: monospace;
-    font-size: 15px;
+    font-size: clamp(14px, 4vw, 15px);
     transition: filter 0.2s ease;
+    padding: 0 10px;
 }
 
 button:hover {
@@ -34,7 +41,7 @@ button:active {
 }
 
 .instagram {
-    background-color: rgb(226, 66, 119);
+    background-color: rgb(232, 84, 134);
 }
 
 .youtube {
@@ -50,5 +57,21 @@ button:active {
 }
 
 .geoguessr {
-    background-color: #be5554;
+    background-color: rgb(223, 96, 94);
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+    
+    img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    button {
+        margin: 8px 0;
+        height: 50px;
+    }
 }
