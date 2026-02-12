@@ -60,15 +60,15 @@ button:active {
     background-color: rgb(223, 96, 94);
 }
 
-/* Space between link rows on desktop */
+/* Space between link rows on desktop (increased for readability) */
 .link-row {
-    margin: 67px 0;
+    margin: 12px 0;
 }
 
-/* Mobile tweaks: reduce spacing between buttons */
+/* Mobile tweaks: increase spacing between buttons on small screens */
 @media (max-width: 480px) {
     .link-row {
-        margin: 15px 0;
+        margin: 36px 0;
     }
 }
 
