@@ -62,13 +62,13 @@ button:active {
 
 /* Space between link rows on desktop (increased for readability) */
 .link-row {
-    margin: 12px 0;
+    margin: 15px 0;
 }
 
 /* Mobile tweaks: increase spacing between buttons on small screens */
 @media (max-width: 480px) {
     .link-row {
-        margin: 36px 0;
+        margin: 15px 0;
     }
 }
 
