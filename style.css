@@ -41,11 +41,11 @@ button:active {
 }
 
 .instagram {
-    background-color: rgb(232, 84, 134);
+    background-color: rgb(255, 87, 143);
 }
 
 .youtube {
-    background-color: rgb(255, 61, 61);
+    background-color: rgb(255, 53, 53);
 }
 
 .discord {
@@ -53,19 +53,17 @@ button:active {
 }
 
 .spotify {
-    background-color: rgb(55, 163, 93);
+    background-color: rgb(55, 168, 94);
 }
 
 .geoguessr {
-    background-color: rgb(223, 96, 94);
+    background-color: rgb(216, 98, 96);
 }
 
-/* Space between link rows on desktop (increased for readability) */
 .link-row {
     margin: 16px 0;
 }
 
-/* Mobile tweaks: increase spacing between buttons on small screens */
 @media (max-width: 480px) {
     .link-row {
         margin: 14px 0;
@@ -85,4 +83,58 @@ button:active {
     button {
         height: 50px;
     }
+}
+#socials-intro {
+    margin-bottom: 30px;
+}
+
+.contact-section {
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.email-wrapper {
+    position: relative;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #00acee;
+    transition: color 0.2s ease;
+}
+
+.email-wrapper:hover {
+    color: #55cdff;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 60px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 50%;
+    margin-left: -30px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+.email-wrapper:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
 }
